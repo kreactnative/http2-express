@@ -14,9 +14,6 @@ const db=dbBuildMap.dbBuild;
 const sequelize= dbBuildMap.sequelize;
 // keep server database
 app.set('db', db);
-
-//console.log(db);
-
 // auto Restful
 app.use(require('body-parser').json({
     type: 'application/*',
@@ -24,13 +21,13 @@ app.use(require('body-parser').json({
 app.all(/\/api\//, (new autoRestful(sequelize)).route());
 
 
-app.get('*', (req, res) => {
+/*app.get('*', (req, res) => {
   res
     .status(200)
     .json({
       message: 'ok'
     })
-})
+})*/
 const options = {
   key: fs.readFileSync(__dirname + '/server.key'),
   cert: fs.readFileSync(__dirname + '/server.crt')
