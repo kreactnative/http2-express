@@ -51,4 +51,10 @@ var dbBuild = lodash.extend({
     Sequelize: Sequelize
 }, db);
 
-module.exports = dbBuild;
+//console.log(dbBuild);
+//console.log(sequelize)
+
+module.exports = {
+  dbBuild: dbBuild,
+  sequelize : sequelize
+};
