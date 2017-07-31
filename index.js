@@ -5,6 +5,7 @@ const path = require('path')
 const fs = require('fs')
 
 const app = express()
+app.use('/img', express.static(path.join(__dirname, 'images')))
 
 app.get('*', (req, res) => {
   res
