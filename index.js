@@ -3,9 +3,13 @@ const spdy = require('spdy')
 const express = require('express')
 const path = require('path')
 const fs = require('fs')
+const db = require('./models');
 
 const app = express()
 app.use('/img', express.static(path.join(__dirname, 'images')))
+
+// keep server database
+app.set('db', db);
 
 app.get('*', (req, res) => {
   res
