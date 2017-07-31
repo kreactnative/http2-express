@@ -25,19 +25,19 @@ module.exports = (function() {
             "userEmail": "nnnn@gggg.com",
             "password": "nnnnnnnnn"
         },
-        "DB": {
+        "DB_server": {
             "SERVER": "128.199.250.80",
             "DB_NAME": "rmchat",
             "PORT": "3306",
             "USERNAME": "root",
             "PASSWORD": "Kdotnet34567_@"
         },
-        "DB_LOCAL": {
-            "SERVER": "128.199.250.80",
+        "DB": {
+            "SERVER": "127.0.0.1",
             "DB_NAME": "rmchat",
             "PORT": "3306",
             "USERNAME": "root",
-            "PASSWORD": "Kdotnet34567_@"
+            "PASSWORD": "56255625"
         }
     };
 })();

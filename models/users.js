@@ -12,6 +12,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
+    sex:{
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
     username: {
       type: DataTypes.STRING(200),
       allowNull: true
@@ -52,11 +56,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
-    update_at: {
+    updated_at: {
       type: DataTypes.DATE,
       allowNull: true
     },
-    update_by: {
+    updated_by: {
       type: DataTypes.INTEGER(11),
       allowNull: true
     }
