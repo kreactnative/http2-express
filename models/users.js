@@ -12,6 +12,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
+    dob: {
+      type: DataTypes.DATE,
+      allowNull: true
+    },
     sex:{
       type: DataTypes.INTEGER(11),
       allowNull: true
